@@ -1,0 +1,58 @@
+header {
+  background: #3c486b;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+header ul {
+  display: flex;
+  align-items: center;
+}
+
+header li {
+  padding: 0.8rem;
+}
+
+header li a:not(.cart) {
+  color: #f0f0f0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  transition: 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+header li a:hover:not(.cart) {
+  color: #F9D949;
+}
+
+header .logo {
+  color: #f9d949;
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+.cart{
+    position: relative;
+    padding: 0.7rem 1rem;
+    background: #f9d949;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.badge{
+    position: absolute;
+    top: -10%;
+    right: -10%;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    text-align: center;
+    background: #F45050;
+    border-radius: 20px;
+}
+
