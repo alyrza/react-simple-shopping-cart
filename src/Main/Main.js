@@ -9,37 +9,61 @@ class Main extends Component {
           <h2 class="title">محصولات</h2>
           <div class="products">
             <div class="product">
-              <img src="1.webp" alt="" />
+              <img src="product-images/1.webp" alt="" />
               <h3 class="product-title">کفش راحتی</h3>
               <h3 class="product-price">قیمت : 25000 تومان</h3>
               <button class="product-btn">افزاودن به سبد خرید</button>
             </div>
             <div class="product">
-              <img src="2.webp" alt="" />
+              <img src="product-images/2.webp" alt="" />
               <h3 class="product-title">کفش راحتی</h3>
               <h3 class="product-price">قیمت : 25000 تومان</h3>
               <button class="product-btn">افزاودن به سبد خرید</button>
             </div>
             <div class="product">
-              <img src="3.webp" alt="" />
+              <img src="product-images/3.webp" alt="" />
               <h3 class="product-title">کفش راحتی</h3>
               <h3 class="product-price">قیمت : 25000 تومان</h3>
               <button class="product-btn">افزاودن به سبد خرید</button>
             </div>
             <div class="product">
-              <img src="4.webp" alt="" />
+              <img src="product-images/4.webp" alt="" />
               <h3 class="product-title">کفش راحتی</h3>
               <h3 class="product-price">قیمت : 25000 تومان</h3>
               <button class="product-btn">افزاودن به سبد خرید</button>
             </div>
             <div class="product">
-              <img src="5.webp" alt="" />
+              <img src="product-images/5.webp" alt="" />
               <h3 class="product-title">کفش راحتی</h3>
               <h3 class="product-price">قیمت : 25000 تومان</h3>
               <button class="product-btn">افزاودن به سبد خرید</button>
             </div>
             <div class="product">
-              <img src="6.webp" alt="" />
+              <img src="product-images/6.webp" alt="" />
+              <h3 class="product-title">کفش راحتی</h3>
+              <h3 class="product-price">قیمت : 25000 تومان</h3>
+              <button class="product-btn">افزاودن به سبد خرید</button>
+            </div>
+            <div class="product">
+              <img src="product-images/7.webp" alt="" />
+              <h3 class="product-title">کفش راحتی</h3>
+              <h3 class="product-price">قیمت : 25000 تومان</h3>
+              <button class="product-btn">افزاودن به سبد خرید</button>
+            </div>
+            <div class="product">
+              <img src="product-images/8.webp" alt="" />
+              <h3 class="product-title">کفش راحتی</h3>
+              <h3 class="product-price">قیمت : 25000 تومان</h3>
+              <button class="product-btn">افزاودن به سبد خرید</button>
+            </div>
+            <div class="product">
+              <img src="product-images/9.webp" alt="" />
+              <h3 class="product-title">کفش راحتی</h3>
+              <h3 class="product-price">قیمت : 25000 تومان</h3>
+              <button class="product-btn">افزاودن به سبد خرید</button>
+            </div>
+            <div class="product">
+              <img src="product-images/10.webp" alt="" />
               <h3 class="product-title">کفش راحتی</h3>
               <h3 class="product-price">قیمت : 25000 تومان</h3>
               <button class="product-btn">افزاودن به سبد خرید</button>
