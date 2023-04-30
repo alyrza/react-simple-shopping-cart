@@ -18,14 +18,14 @@ header li {
   padding: 0.8rem;
 }
 
-header li a:not(.cart) {
-  color: #f0f0f0;
+header li a:not(.cart-btn) {
+  color: #fff;
   font-size: 1.2rem;
   font-weight: 600;
   transition: 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-header li a:hover:not(.cart) {
+header li a:hover:not(.cart-btn) {
   color: #F9D949;
 }
 
@@ -35,13 +35,14 @@ header .logo {
   font-weight: 700;
 }
 
-.cart{
+.cart-btn{
     position: relative;
     padding: 0.7rem 1rem;
     background: #f9d949;
     border-radius: 50%;
     cursor: pointer;
     font-size: 2rem;
+    color: #000;
 }
 
 .badge{
@@ -54,5 +55,6 @@ header .logo {
     text-align: center;
     background: #F45050;
     border-radius: 20px;
+    color: #fff;
 }
 
