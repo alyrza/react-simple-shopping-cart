@@ -30,4 +30,15 @@
 
 .cart.active{
   display: flex;
+  animation: openCart 0.4s alternate;
+  transform-origin: bottom;
+}
+
+@keyframes openCart {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
 }
