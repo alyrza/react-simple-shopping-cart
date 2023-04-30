@@ -1,15 +1,15 @@
 import React, { Component } from "react";
-import "./Item.css"
+import "./Item.css";
 
 class Item extends Component {
   render() {
     return (
       <tr>
         <td>
-          <img className="cart-item-image" src="product-images/1.webp" alt="" />
+          <img className="cart-item-image" src={this.props.image} alt="" />
         </td>
-        <td>عنوان</td>
-        <td>قیمت</td>
+        <td>{this.props.title}</td>
+        <td>{this.props.price}</td>
         <td>
           <button>حذف</button>
         </td>

@@ -48,7 +48,11 @@ class Header extends Component {
             </nav>
           </div>
         </header>
-        <Cart isOpen={this.state.cartIsOpen} toggle={this.toggleCart} />
+        <Cart
+          isOpen={this.state.cartIsOpen}
+          toggle={this.toggleCart}
+          cartItems={this.props.cartItems}
+        />
       </>
     );
   }

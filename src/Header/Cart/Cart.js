@@ -20,7 +20,9 @@ class Cart extends Component {
         <h3>سبد خرید</h3>
         <table>
           <thead>
-            <Item />
+            {this.props.cartItems.map((cartItem) => {
+              return <Item {...cartItem} />;
+            })}
           </thead>
         </table>
         <button>حذف کل سبد خرید</button>
