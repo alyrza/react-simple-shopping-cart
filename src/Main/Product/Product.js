@@ -8,11 +8,12 @@ class Product extends Component {
   }
 
   addToCart() {
+    let { id, title, price, image } = this.props;
     this.props.addTocart({
-      id: this.props.id,
-      title: this.props.title,
-      price: this.props.price,
-      image: this.props.image,
+      id,
+      title,
+      price,
+      image,
     });
   }
   render() {
