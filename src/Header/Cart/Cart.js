@@ -11,6 +11,7 @@ class Cart extends Component {
   toggleCart() {
     this.props.toggle();
   }
+
   render() {
     return (
       <div className={`cart ${this.props.isOpen}`}>
@@ -21,11 +22,13 @@ class Cart extends Component {
         <table>
           <thead>
             {this.props.cartItems.map((cartItem) => {
-              return <Item {...cartItem} />;
+              return <Item key={cartItem.id} {...cartItem} onRemove={this.props.onRemoveItem} />;
             })}
           </thead>
         </table>
-        <button>حذف کل سبد خرید</button>
+        <button>
+          حذف کل سبد خرید
+        </button>
       </div>
     );
   }

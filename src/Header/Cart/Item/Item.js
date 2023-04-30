@@ -2,6 +2,9 @@ import React, { Component } from "react";
 import "./Item.css";
 
 class Item extends Component {
+  remove(id) {
+    this.props.onRemove(id)
+  }
   render() {
     return (
       <tr>
@@ -11,7 +14,7 @@ class Item extends Component {
         <td>{this.props.title}</td>
         <td>{this.props.price}</td>
         <td>
-          <button>حذف</button>
+          <button onClick={this.remove.bind(this, this.props.id)}>حذف</button>
         </td>
       </tr>
     );

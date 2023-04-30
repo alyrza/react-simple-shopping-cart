@@ -77,7 +77,13 @@ class Main extends Component {
           <h2 className="title">محصولات</h2>
           <div className="products">
             {this.state.products.map((product) => {
-              return <Product {...product} key={product.id} addTocart = {this.props.addToCart} />;
+              return (
+                <Product
+                  {...product}
+                  key={product.id}
+                  addTocart={this.props.addToCart}
+                />
+              );
             })}
           </div>
         </section>

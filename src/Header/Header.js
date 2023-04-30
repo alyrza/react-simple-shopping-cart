@@ -40,7 +40,11 @@ class Header extends Component {
                 </li>
                 <li>
                   <a href="#" onClick={this.toggleCart} className="cart-btn">
-                    <span className="badge">3</span>
+                    {this.props.cartItems.length > 0 && (
+                      <span className="badge">
+                        {this.props.cartItems.length}
+                      </span>
+                    )}
                     <IoMdCart />
                   </a>
                 </li>
@@ -49,6 +53,7 @@ class Header extends Component {
           </div>
         </header>
         <Cart
+          onRemoveItem={this.props.removeCartItem}
           isOpen={this.state.cartIsOpen}
           toggle={this.toggleCart}
           cartItems={this.props.cartItems}
