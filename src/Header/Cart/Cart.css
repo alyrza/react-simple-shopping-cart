@@ -13,7 +13,7 @@
   padding: 3rem;
   box-shadow: 5px 6px 20px rgba(0, 0, 0, 0.4);
   border-radius: 5px;
-  /* display: none; */
+  display: none;
 }
 
 .close-btn{
@@ -26,4 +26,8 @@
     color: #fff;
     font-size: 1rem;
     cursor: pointer;
+}
+
+.cart.active{
+  display: flex;
 }

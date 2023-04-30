@@ -4,6 +4,20 @@ import { IoMdCart } from "react-icons/io";
 import Cart from "./Cart/Cart";
 
 class Header extends Component {
+  constructor() {
+    super();
+    this.state = {
+      cartIsOpen: "",
+    };
+
+    this.toggleCart = this.toggleCart.bind(this);
+  }
+  toggleCart() {
+    if (this.state.cartIsOpen) {
+      return this.setState({ cartIsOpen: "" });
+    }
+    this.setState({ cartIsOpen: "active" });
+  }
   render() {
     return (
       <>
@@ -25,7 +39,7 @@ class Header extends Component {
                   <a href="#">خانه</a>
                 </li>
                 <li>
-                  <a href="#" className="cart-btn">
+                  <a href="#" onClick={this.toggleCart} className="cart-btn">
                     <span className="badge">3</span>
                     <IoMdCart />
                   </a>
@@ -34,7 +48,7 @@ class Header extends Component {
             </nav>
           </div>
         </header>
-        <Cart />
+        <Cart isOpen={this.state.cartIsOpen} toggle={this.toggleCart} />
       </>
     );
   }
